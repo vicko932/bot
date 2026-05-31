@@ -1,0 +1,55 @@
+/*
+ * OPEN TICKET PANELS
+ * ----------------------------------------------
+ * Create customizable panel messages with buttons or a dropdown.
+ * Add up to 25 options to this panel from (config/options.jsonc)
+ * Panels can be customised with text, images, colors and more.
+ * 
+ * Spawn the panel in Discord using: /panel <id>
+ * 
+ * TIP: Create new panels by copying everything between and including the {...} brackets of an panel. Paste it after the last panel and make sure that they are seperated by a comma.
+ */
+[
+    {
+        /* A panel is creates a message with up to 25 options as buttons or dropdown. */
+        "id":"request-game--support-ticket-60b67a31",
+        "name":"Request Game / Support Ticket",
+        "dropdown":false,
+        
+        /* Sudah ditambahkan tombol Member biasa dan tombol VIP */
+        "options":["request-game-38ab9cfd", "request-game-vip"],
+        
+        "text":"", //Leave empty to disable
+        "embed":{
+            "enabled":true,
+            "title":"Request Game / Support Ticket", //Leave empty to disable
+            "description":"You can request the game you want or ask for help via this ticket.", //Leave empty to disable
+            
+            "customColor":"", //Leave empty to use default color
+            "url":"", //URL. Leave empty to disable
+            
+            "image":"", //Image URL. Leave empty to disable
+            "thumbnail":"", //Image URL. Leave empty to disable
+            
+            "footer":"AnotherUniverse", //Leave empty to disable
+            /* Embed fields. Set to empty list [] to disable. */
+            "fields":[],
+            "timestamp":false
+        },
+        "settings":{
+            "dropdownPlaceholder":"Open a ticket", //Leave empty to use default.
+            "maximumButtonsPerRow":5,
+            
+            /* Display the maximum amount of tickets per user. */
+            "enableMaxTicketsWarningInText":false,
+            "enableMaxTicketsWarningInEmbed":true,
+            
+            /* Automatically generate option descriptions from (config/options.jsonc). */
+            "describeOptionsLayout":"normal", //Choices: simple, normal, detailed
+            "describeOptionsCustomTitle":"",
+            "describeOptionsInText":false,
+            "describeOptionsInEmbedFields":true,
+            "describeOptionsInEmbedDescription":false
+        }
+    }
+]

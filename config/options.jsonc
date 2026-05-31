@@ -1,0 +1,176 @@
+/*
+ * OPEN TICKET BUTTON OPTIONS
+ * ----------------------------------------------
+ */
+[
+    {
+        /* TOMBOL 1: UNTUK MEMBER BIASA (ID Tetap Sama Agar Tidak Eror) */
+        "id":"request-game-38ab9cfd",
+        "name":"Free Request Token Game",
+        "description":"Request Game Token yang kamu inginkan \nRequest token game you want ",
+        "type":"ticket",
+        "requiredRoles": ["1276862793273966686"],
+        
+        "button":{
+            "emoji":"💌",
+            "label":"Free Request Token",
+            "color":"green"
+        },
+        
+        "questions":[],
+        "ticketAdmins":[],
+        "readonlyAdmins":[],
+        "allowCreationByBlacklistedUsers":false,
+        
+        "channel":{
+            "prefix":"ticket-",
+            "suffix":"user-name",
+            "category":"1510577820265484359",
+            "topic":"Request Game yang kamu inginkan \n Request the game you want"
+        },
+        
+        "dmMessage":{
+            "enabled":false,
+            "text":"",
+            "embed":{
+                "enabled":false,
+                "title":"",
+                "description":"",
+                "customColor":"",
+                "image":"",
+                "thumbnail":"",
+                "fields":[],
+                "timestamp":false
+            }
+        },
+        "ticketMessage":{
+            "enabled":true,
+            "text":"",
+            "embed":{
+                "enabled":true,
+                "title":"Request Game",
+                "description":"Request Game yang kamu inginkan \n Request the game you want",
+                "customColor":"",
+                "image":"",
+                "thumbnail":"",
+                "fields":[],
+                "timestamp":true
+            },
+            "ping":{
+                "@here":true,
+                "@everyone":false,
+                "custom":[]
+            }
+        },
+        "autoclose":{
+            "enableInactiveHours":true,
+            "inactiveHours":1,
+            "enableUserLeave":true,
+            "disableOnClaim":false
+        },
+        "autodelete":{
+            "enableInactiveDays":false,
+            "inactiveDays":7,
+            "enableUserLeave":false,
+            "disableOnClaim":false
+        },
+        "cooldown":{
+            "enabled":true,
+            "cooldownMinutes":1440
+        },
+        "limits":{
+            "enabled":true,
+            "globalMaximum":20,
+            "userMaximum":1
+        },
+        "slowMode":{
+            "enabled":false,
+            "slowModeSeconds":20
+        }
+    },
+    {
+        /* TOMBOL 2: UNTUK ROLE VIP / DONATUR */
+        "id":"request-game-vip",
+        "name":"Paid Request Token Game",
+        "description":"Request Game Anything You Want ( No Cooldown )",
+        "type":"ticket",
+        "requiredRoles": ["1276862749481107569"],
+        
+        "button":{
+            "emoji":"💎",
+            "label":"Paid Request",
+            "color":"blue"
+        },
+        
+        "questions":[],
+        "ticketAdmins":[],
+        "readonlyAdmins":[],
+        "allowCreationByBlacklistedUsers":false,
+        
+        "channel":{
+            "prefix":"vip-",
+            "suffix":"user-name",
+            "category":"1510577820265484359",
+            "topic":"Request Game khusus VIP \n Request the game you want"
+        },
+        
+        "dmMessage":{
+            "enabled":false,
+            "text":"",
+            "embed":{
+                "enabled":false,
+                "title":"",
+                "description":"",
+                "customColor":"",
+                "image":"",
+                "thumbnail":"",
+                "fields":[],
+                "timestamp":false
+            }
+        },
+        "ticketMessage":{
+            "enabled":true,
+            "text":"",
+            "embed":{
+                "enabled":true,
+                "title":"VIP Request Game",
+                "description":"Silakan tulis game yang kamu inginkan, VIP akan diprioritaskan!",
+                "customColor":"",
+                "image":"",
+                "thumbnail":"",
+                "fields":[],
+                "timestamp":true
+            },
+            "ping":{
+                "@here":true,
+                "@everyone":false,
+                "custom":[]
+            }
+        },
+        "autoclose":{
+            "enableInactiveHours":true,
+            "inactiveHours":1,
+            "enableUserLeave":true,
+            "disableOnClaim":false
+        },
+        "autodelete":{
+            "enableInactiveDays":false,
+            "inactiveDays":7,
+            "enableUserLeave":false,
+            "disableOnClaim":false
+        },
+        "cooldown":{
+            "enabled":false,
+            "cooldownMinutes":1
+        },
+        "limits":{
+            "enabled":true,
+            "globalMaximum":20,
+            "userMaximum":2
+        },
+        "slowMode":{
+            "enabled":false,
+            "slowModeSeconds":20
+        }
+    }
+]
